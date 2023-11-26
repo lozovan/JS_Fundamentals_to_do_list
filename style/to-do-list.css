@@ -1,0 +1,166 @@
+.header_to-do-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-todo {
+    width: 100%;
+    height: 50px;
+    margin: 7px 0 7px 0;
+}
+
+.new-todo form {
+    display: flex;
+    align-items: center;
+    background-color: var(--text);
+    border-radius: 10px;
+}
+
+.new-todo form input {
+    flex: 1;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    outline: transparent;
+    background-color: var(--text);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.new-todo form button {
+    width: 60px;
+    height: 45px;
+    font-size: 1.7rem;
+    border: none;
+    cursor: pointer;
+    background: var(--title-and-btn);
+    border-radius: 10px;
+}
+
+.new-todo form button:hover {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.filter {
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--title-and-btn);
+    border-radius: 10px;
+}
+
+.filter button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.filter button.active {
+    color: var(--text);
+}
+
+#todos-list .todo {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    background-color: var(--text);
+    color: var(--thema);
+}
+
+#todos-list .todo:hover {
+    background-color: var(--btn-hover);
+}
+
+#todos-list .todo * {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+#todos-list .todo i {
+    font-size: 0.9rem;
+}
+
+#todos-list .todo p {
+    flex: 1;
+    word-break: break-all;
+}
+
+.checked {
+    color: var(--dark-mode-text);
+}
+
+#todos-list .todo .bi-pencil-square:hover {
+    color: var(--title-and-btn);
+}
+
+#todos-list .todo .bi-trash:hover {
+    color: var(--title-and-btn);
+}
+
+#clearBtn {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 0.95rem 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--title-and-btn);
+    cursor: pointer;
+    color: var(--thema);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#clearBtn:hover {
+    color: var(--text);
+}
+@media (min-width: 320px) {
+    .container{
+        max-width: 300px;
+    }
+    .filter button {
+     font-size: 12px;
+    }
+    #todos-list .todo {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .container{
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 425px) {
+   .container{
+    max-width: 400px;
+   }
+}
+@media (min-width: 768px) {
+    .container{
+     max-width: 600px;
+    }
+    .filter button {
+        font-size: 14px;
+       }
+ }
